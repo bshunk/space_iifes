@@ -1,14 +1,11 @@
-var SolarSystem = (function() {
+var SolarSystem = (function(oldSolarSystem) {
 	let planets = [];
 	let dwarfPlanets = [];
 	let planetsLandedOn = 0;
 
-
 	planets.push("Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune");
 
-
-
-	let setPlanetsLandedOn = function(count) {
+	oldSolarSystem.setPlanetsLandedOn = function(count) {
 		if (count < 0 || count > planets.length) {
 			throw `I don't think so, bud. There are only ${planets.length} planets`
 		} else {
@@ -16,16 +13,15 @@ var SolarSystem = (function() {
 		}
 	}
 
-
-
-	let lowercasePlanets = function() {
+	oldSolarSystem.lowercasePlanets = function() {
 		// TODO loop through the planets and use .toLowercase()
 		
 	}
 
-
-
-	let addDwarfPlanet = function(planetoid) {
+	oldSolarSystem.addDwarfPlanet = function(planetoid) {
 		dwarfPlanets.push(planetoid);
 	}
-}());
+
+	return oldSolarSystem
+
+}(SolarSystem));
