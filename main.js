@@ -4,36 +4,3 @@ console.log("iifes in Spaaaaaaaace");
 
 var SolarSystem = {};
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
