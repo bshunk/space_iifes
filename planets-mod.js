@@ -7,7 +7,7 @@
 	
 	let planets = Object.create(null);
 
-	plantes.setPlanetsLandedOn = function(count) {
+	planets.setPlanetsLandedOn = function(count) {
 		if (count < 0 || count > planets.length) {
 			throw `I don't think so, bud. There are only ${planets.length} planets`
 		} else {
